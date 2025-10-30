@@ -1,5 +1,6 @@
 'use client'
 
+import Banner from '@/components/banner';
 import './globals.css';
 
 export default function RootLayout({
@@ -9,6 +10,6 @@ export default function RootLayout({
 }) {
 
   return (
-    <div>Pgeneral page</div>
+    <Banner />
   );
 }

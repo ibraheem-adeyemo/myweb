@@ -50,7 +50,7 @@ export interface ServiceItem {
   title: string;
   subtitle?: string;
   href: string;
-  icon?: string| IconType; // optional svg path or url (can be replaced with ReactNode if needed)
+  icon?: IconType; // optional svg path or url (can be replaced with ReactNode if needed)
 }
 
 export interface Rating {

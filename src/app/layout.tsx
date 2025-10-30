@@ -1,4 +1,4 @@
-import { NavbarComponent } from '@/components/navbar/Navbar';
+import { Navbar } from '@/components/navbar/navbar';
 import '../styles/globals.css'
 import Providers from './providers'
 
@@ -18,9 +18,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   return (
    <html lang="en" className="scroll-smooth">
-      <body className="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
-        <Providers>            
-            <NavbarComponent />
+      <body className="bg-[url(../../public/images/bg/hero-bg02.jpg)] dark:bg-gray-950 text-gray-900 dark:text-gray-100">
+        <Providers>
+            <Navbar />
             <main className="pt-20 px-4">{children}</main>
         </Providers>
       </body>
