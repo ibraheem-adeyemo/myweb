@@ -18,17 +18,17 @@ const navBarData = [
             {text: 'Cloud and Devops', href: ''},
             {text: 'Help Desk Saas', href: 'home-5'},
         ],
-        href: ''
+        href: '/'
     },
     {
        navText: 'Company',
        subMenu: () => <MegaMenu1 />,
-       href: ''
+       href: '/'
     },
     {
         navText: 'Services',
         subMenu: ()=><></>,
-        href: ''
+        href: '/'
     },
     {
         navText: 'Casestudy', 
@@ -36,7 +36,7 @@ const navBarData = [
             {text: 'Casestudy', href: 'casestudy'},
             {text: 'Casestudy Details', href: 'casestudy-details'},
         ],
-        href: ''
+        href: '/'
     },
     {
         navText: 'Blog', 
@@ -44,25 +44,25 @@ const navBarData = [
             {text: 'Blog', href: 'blog'},
             {text: 'Blog Details', href: 'blog-details'},
         ],
-        href: ''
+        href: '/'
     },
     {
         navText: 'Contact', 
         subMenu: [],
-        href: ''
+        href: '/contact'
     },
 ]
 
 export const Navbar = () => {
   return (
-    <div className="flex justify-between items-center my-[4rem] mx-auto w-[1320px]">
+    <div className="flex justify-between items-center mb-[4rem] mx-auto w-[1320px]">
       {/* Logo */}
       <div>
         <Image src={LogoImage} alt="Company Logo" />
       </div>
 
       {/* Navigation */}
-      <div className="flex">
+      <div className="flex md:hi">
         {navBarData.map((item: NavItem, i: number) => {
           const isComponent = typeof item.subMenu === "function";
           const isArray = Array.isArray(item.subMenu);
@@ -118,6 +118,10 @@ export const Navbar = () => {
             </div>
           );
         })}
+      </div>
+
+      <div>
+
       </div>
 
       {/* CTA Button */}

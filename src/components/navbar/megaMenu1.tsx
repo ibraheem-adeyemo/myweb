@@ -4,7 +4,7 @@ import { Icon } from '@mui/material'
 import { sampleServices } from '@/data'
 import Image from 'next/image'
 import Button from '../general/form/custom-button'
-import USerImage from '../../../public/images/home-page-img/nav-med-mm_img.webp'
+import USerImage from '../../../public/images/home-page-img/avatar.webp'
 import Link from 'next/link'
 
 const MegaMenuCard = ({title, description, href, icon: Icon}: MegaMenucard) => {
@@ -40,25 +40,25 @@ export const MegaMenu1 = () => {
                     }
                 </div>
                 <div className='flex gap-2'>
-                    <Button text='Get Free Consultation' />
+                    <Button text='Get Free Consultation' className='bg-[black]' />
                     <Button text='Get Free Consultation' />
                     <Button text='Get Free Consultation' />
                 </div>
             </div>
-            <div className='w-[22%] bg-black'>
-                <div>
+            <div className='flex flex-col justify-between w-[22%] bg-black text-white py-[2rem] px-[2rem] font-bold'>
+                <div className='flex gap-4 text-[13px] items-center'>
                     <div>
                         <Image src={USerImage} alt='' />
                     </div>
-                    <div>
+                    <div className='flex flex-col gap-1 h-[50px]'>
                         <span>Maverick Phoenix</span>
                         <span>CEO at Innomax</span>
                     </div>
                 </div>
                 <div>
-                    <h3>
+                    <h5>
                         “As CEO at Innomax, I’ve worked hard to clarify client requirements and deliver results efficiently without reinventing the wheel.”
-                    </h3>
+                    </h5>
                 </div>
             </div>
         </div>
